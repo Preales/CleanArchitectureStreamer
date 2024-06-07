@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infraestructure", "Infraestructure\CleanArchitecture.Infraestructure\CleanArchitecture.Infraestructure.csproj", "{1F597BE3-EB59-4DFF-B555-3C69193F2AE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Identity", "CleanArchitecture.Identity\CleanArchitecture.Identity.csproj", "{EEB43C51-EBFC-4980-9713-595244930B80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Identity", "Infraestructure\CleanArchitecture.Identity\CleanArchitecture.Identity.csproj", "{EEB43C51-EBFC-4980-9713-595244930B80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
