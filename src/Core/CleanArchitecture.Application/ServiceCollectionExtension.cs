@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace CleanArchitecture.Application;
 
-public static class ApplicationServiceRegistration
+public static class ServiceCollectionExtension
 {
     public static IServiceCollection AddApplicationService(this IServiceCollection services)
     {
