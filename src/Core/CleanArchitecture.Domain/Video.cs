@@ -10,6 +10,7 @@ public class Video : BaseDomainModel
     }
     public string? Nombre { get; set; }
     public int StreamerId { get; set; }
+    public int DirectorId { get; set; }
     public virtual Streamer? Streamer { get; set; }
     public ICollection<Actor> Actores { get; set; }
     public virtual Director Director { get; set; }
