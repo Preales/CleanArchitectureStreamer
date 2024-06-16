@@ -20,11 +20,11 @@ public class AuthService : IAuthService
     public AuthService(
         UserManager<ApplicationUser> userManager,
         SignInManager<ApplicationUser> signInManager,
-        IOptions<JWtSettings> jWtSettings)
+        IOptionsMonitor<JWtSettings> jWtSettings)
     {
         _userManager = userManager;
         _signInManager = signInManager;
-        _jWtSettings = jWtSettings.Value;
+        _jWtSettings = jWtSettings.CurrentValue;
     }
 
     public async Task<AuthResponse> LoginAsync(AuthRequest request)

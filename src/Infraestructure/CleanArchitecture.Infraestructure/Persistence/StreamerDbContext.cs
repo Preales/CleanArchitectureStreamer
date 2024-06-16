@@ -34,11 +34,6 @@ public class StreamerDbContext : DbContext
         return base.SaveChangesAsync(cancellationToken);
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer("");
-    }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Streamer>()
