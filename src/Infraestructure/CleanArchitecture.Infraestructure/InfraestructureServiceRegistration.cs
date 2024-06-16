@@ -18,6 +18,7 @@ public static class InfraestructureServiceRegistration
             options.UseSqlServer(configuration.GetConnectionString("ConnectionString"),
             m => m.MigrationsAssembly(typeof(StreamerDbContext).Assembly.FullName))
         );
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
         services.AddScoped<IVideoRepository, VideoRepository>();
         services.AddScoped<IStreamerRepository, StreamerRepository>();
