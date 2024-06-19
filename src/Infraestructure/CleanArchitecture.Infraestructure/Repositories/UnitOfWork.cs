@@ -12,6 +12,7 @@ namespace CleanArchitecture.Infraestructure.Repositories
 
         private IVideoRepository _videoRepository;
         private IStreamerRepository _streamerRepository;
+        public StreamerDbContext StreamerDbContext => _context;
 
         public IVideoRepository VideoRepository => _videoRepository ?? new VideoRepository(_context);
         public IStreamerRepository StreamerRepository => _streamerRepository ?? new StreamerRepository(_context);
